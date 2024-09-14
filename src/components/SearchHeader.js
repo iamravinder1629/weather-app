@@ -26,11 +26,15 @@ function SearchHeader() {
     return (
         <div className="d-flex justify-content-around flex-column flex-sm-row bg-light py-3 px-4 header">
             {
-                isloading &&
-                <div className=" order-sm-2 mb-2 mb-sm-0">
-                    <h4>{monthName} {year}</h4>
-                    <p>{dayName}, {monthName.slice(0, 3)} {day}</p>
-                </div>
+                isloading ?
+                    <div className=" order-sm-2 mb-2 mb-sm-0">
+                        <h4>{monthName} {year}</h4>
+                        <p>{dayName}, {monthName.slice(0, 3)} {day}</p>
+                    </div> :
+                    <div className=" order-sm-2 mb-2 mb-sm-0">
+                        <h4>Month 2025</h4>
+                        <p>DayName, Mon 22</p>
+                    </div>
             }
             <div className="d-flex align-items-center order-sm-1">
                 <input

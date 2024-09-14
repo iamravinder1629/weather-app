@@ -53,7 +53,7 @@ function TemperatureComponent() {
             <div className='col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center'>
                 <div className='me-3 d-flex align-items-center'>
                     <div className='mx-3'>
-                        <h3 className=''>{city}</h3>
+                        <h3>{city ? city : "City"}</h3>
                         <img
                             src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
                             alt="" height={50}
@@ -67,15 +67,15 @@ function TemperatureComponent() {
                     </div>
                     <div className=' text-center'>
 
-                        <h1 className=''>{temperature}</h1>
-                        <h5><i>{description}</i></h5>
+                        <h1 className=''>{temperature ? temperature : "32°"}</h1>
+                        <h5><i>{description ? description : "cloud"}</i></h5>
                     </div>
                 </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 col-12 p-3">
                 <div style={{ borderLeft: "solid gray 2px" }} className='px-2'>
                     <p className='m-0 border-bottom p-1'>
-                        <FaCloudSunRain/>
+                        <FaCloudSunRain />
                         <span className='mx-3'>Precipitation:</span>
                         <b>{(precipitation * 100).toFixed(0)}%</b>
                     </p>
