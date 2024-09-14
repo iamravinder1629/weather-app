@@ -31,12 +31,12 @@ const TemperatureGraph = () => {
         animationEnabled: true,
         axisX: {
             title: "Time",
-            titleFontColor: "#00a6ed",
+            titleFontColor: "#1d3f75",
             labelFontColor: "black",
         },
         axisY: {
             title: "Temperature",
-            titleFontColor: "#00a6ed",
+            titleFontColor: "#1d3f75",
             labelFontColor: "black",
             labelFormatter: function (e) {
                 return e.value + "°";
@@ -51,9 +51,9 @@ const TemperatureGraph = () => {
         },
         data: [{
             markerSize: 5,
-            color: "#627e75",
+            color: "#102341",
             fillOpacity: 0.2,
-            lineColor: "skyblue",
+            lineColor: "#81a2d5",
             type: "splineArea",
             dataPoints: isloading ?
                 data.list

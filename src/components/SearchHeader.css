@@ -1,13 +1,33 @@
 .header input {
     border: none;
     outline: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid#6386b9;
     border-radius: 0px;
     background-color: transparent;
 }
 
 .header input:focus {
+    border-bottom: 2px solid #6386b9;
     background-color: transparent;
     outline: none;
     box-shadow: none;
+}
+
+.icon-rapper {
+    position: relative;
+}
+
+.icon-rapper img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.icon{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon {
+        display: none !important;
+    }
 }

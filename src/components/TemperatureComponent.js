@@ -60,14 +60,15 @@ function TemperatureComponent() {
                             style={
                                 {
                                     boxShadow: "1px 1px 15px rgba(192, 192, 192,0.6)",
-                                    backgroundColor: "skyblue",
+                                    backgroundColor: "#6386b9",
                                     borderRadius: " 10px"
                                 }}
                         />
                     </div>
                     <div className=' text-center'>
 
-                        <h1 className=''>{temperature ? temperature : "32°"}</h1>
+                        <h1
+                            style={{ fontSize: "60px" }}>{temperature ? temperature : "32°"}</h1>
                         <h5><i>{description ? description : "cloud"}</i></h5>
                     </div>
                 </div>
